@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="en-US" />
+  <App xmlns="" ProductID="{f218511d-d065-4b60-8278-a0cfc28c95b5}" Title="GadgetsGeek" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="" Description="Latest Gadget news from different sources on daily basis.
+A great app to keep you on update." Publisher="" PublisherID="{e7d94c95-4681-45a0-a8b4-5df4e482fb9e}">
+    <IconPath IsRelative="true" IsResource="false">Images\DoWApp-Logo.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING"/>
+      <Capability Name="ID_CAP_SENSORS"/>
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT"/>
+      <Capability Name="ID_CAP_SPEECH_RECOGNITION" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+      <Capability Name="ID_CAP_LOCATION" />
+      <Capability Name="ID_CAP_PROXIMITY" />
+      <Capability Name="ID_CAP_IDENTITY_USER" />
+      <Capability Name="ID_CAP_MAP" />
+	  <Capability Name="ID_CAP_MEDIALIB_PHOTO" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="View/NDTVGadgets_News.xaml" ActivationPolicy="Resume"/>
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="MyDoWapp" TaskName="_default">
+	    <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">Images/TileSmallBackground-5ea72852-c6fb-4ba1-ba27-8e3f840b08c3.png</SmallImageURI>
+		  <Count>0</Count>
+		  <BackgroundImageURI IsRelative="true" IsResource="false">Images/Tile-e234561e-c0c7-4880-ad19-a15bccf591c8.png</BackgroundImageURI>
+          <Title>GadgetsGeek</Title>
+          <BackContent></BackContent>
+	      <BackBackgroundImageURI IsRelative="true" IsResource="false">Images/Tileback-49d7feb8-d8b3-4bb6-8153-fd6ecf687fd3.png</BackBackgroundImageURI>
+          <BackTitle>GadgetsGeek</BackTitle>
+		  		  <LargeBackgroundImageURI IsRelative="true" IsResource="false">Images/Tile-e234561e-c0c7-4880-ad19-a15bccf591c8.png</LargeBackgroundImageURI>
+		  <LargeBackBackgroundImageURI IsRelative="true" IsResource="false">Images/Tileback-49d7feb8-d8b3-4bb6-8153-fd6ecf687fd3.png</LargeBackBackgroundImageURI>
+ 
+          <DeviceLockImageURI IsRelative="true" IsResource="false"></DeviceLockImageURI>
+          <HasLarge>True</HasLarge>		
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <Extensions>
+      <Extension ExtensionName="LockScreen_Notification_IconCount" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+      <Extension ExtensionName="LockScreen_Notification_TextField" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+      <Extension ExtensionName="LockScreen_Background" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+    </Extensions>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>
